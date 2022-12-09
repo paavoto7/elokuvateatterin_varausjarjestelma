@@ -1,14 +1,127 @@
-{"name": "good", "seat_count": 44, "available_seats": 5, "movie_name": "Toy Story"}
-{"name": "god", "seat_count": 44, "available_seats": 5, "movie_name": "Star Wars"}
-{"name": "gd", "seat_count": 44, "available_seats": 5, "movie_name": "Toy Story"}
-{"name": "goo", "seat_count": 44, "available_seats": 5, "movie_name": "Toy Story"}
-{"name": "ood", "seat_count": 44, "available_seats": 5, "movie_name": "Toy Story"}
-{"name": "od", "seat_count": 44, "available_seats": 5, "movie_name": "Star Wars"}
-{"name": "d", "seat_count": 44, "available_seats": 5, "movie_name": "Toy Story"}
-{"name": "gsdood", "seat_count": 44, "available_seats": 5, "movie_name": "Toy Story"}
-{"name": "goodd", "seat_count": 44, "available_seats": 5, "movie_name": "Toy Story"}
-{"name": "goeod", "seat_count": 44, "available_seats": 5, "movie_name": "Toy Story"}
-{"name": "gookd", "seat_count": 44, "available_seats": 5, "movie_name": "Toy Story"}
-{"name": "goo2d", "seat_count": 44, "available_seats": 5, "movie_name": "Toy Story"}
-{"name": "goofdfd", "seat_count": 44, "available_seats": 5, "movie_name": "Toy Story"}
-{"name": "goo33d", "seat_count": 44, "available_seats": 5, "movie_name": "Toy Story"}
+[{
+    "name": "good",
+    "seat_count": 44,
+    "movies": {
+        "16-18": {
+            "movie_name": "James Bond",
+            "available_seats": 5
+        },
+        "18-20": {
+            "movie_name": "Matrix",
+            "available_seats": 5
+        },
+        "20-22": {
+            "movie_name": "Star Wars",
+            "available_seats": 5
+        }
+    }
+},
+{
+    "name": "gofggod",
+    "seat_count": 44,
+    "movies":{
+        "16-18": {
+            "movie_name": "James Bond",
+            "available_seats": 5
+        },
+        "18-20": {
+            "movie_name": "Matrix",
+            "available_seats": 5
+        },
+        "20-22": {
+            "movie_name": "Star Wars",
+            "available_seats": 5
+        }
+    }
+},
+{
+    "name": "go3fgdgod",
+    "seat_count": 44,
+    "movies":{
+        "16-18": {
+            "movie_name": "James Bond",
+            "available_seats": 5
+        },
+        "18-20": {
+            "movie_name": "Matrix",
+            "available_seats": 5
+        },
+        "20-22": {
+            "movie_name": "Star Wars",
+            "available_seats": 5
+        }
+    }
+},
+{
+    "name": "go2323od",
+    "seat_count": 44,
+    "movies":{
+        "16-18": {
+            "movie_name": "James Bond",
+            "available_seats": 5
+        },
+        "18-20": {
+            "movie_name": "Matrix",
+            "available_seats": 5
+        },
+        "20-22": {
+            "movie_name": "Star Wars",
+            "available_seats": 5
+        }
+    }
+},
+{
+    "name": "g33ood",
+    "seat_count": 44,
+    "movies":{
+        "16-18": {
+            "movie_name": "James Bond",
+            "available_seats": 5
+        },
+        "18-20": {
+            "movie_name": "Matrix",
+            "available_seats": 5
+        },
+        "20-22": {
+            "movie_name": "Star Wars",
+            "available_seats": 5
+        }
+    }
+},
+{
+    "name": "gosdfsdfod",
+    "seat_count": 44,
+    "movies":{
+        "16-18": {
+            "movie_name": "James Bond",
+            "available_seats": 5
+        },
+        "18-20": {
+            "movie_name": "Matrix",
+            "available_seats": 5
+        },
+        "20-22": {
+            "movie_name": "Star Wars",
+            "available_seats": 5
+        }
+    }
+},
+{
+    "name": "gosdfsdfod",
+    "seat_count": 44,
+    "movies":{
+        "16-18": {
+            "movie_name": "James Bond",
+            "available_seats": 5
+        },
+        "18-20": {
+            "movie_name": "Matrix",
+            "available_seats": 5
+        },
+        "20-22": {
+            "movie_name": "Star Wars",
+            "available_seats": 5
+        }
+    }
+}
+]
