@@ -1,127 +1,98 @@
-[{
-    "name": "good",
-    "seat_count": 44,
-    "movies": {
-        "16-18": {
-            "movie_name": "James Bond",
-            "available_seats": 5
-        },
-        "18-20": {
-            "movie_name": "Matrix",
-            "available_seats": 5
-        },
-        "20-22": {
-            "movie_name": "Star Wars",
-            "available_seats": 5
-        }
-    }
-},
 {
-    "name": "gofggod",
-    "seat_count": 44,
-    "movies":{
-        "16-18": {
-            "movie_name": "James Bond",
-            "available_seats": 5
-        },
-        "18-20": {
-            "movie_name": "Matrix",
-            "available_seats": 5
-        },
-        "20-22": {
-            "movie_name": "Star Wars",
-            "available_seats": 5
+    "good": {
+        "seat_count": 44,
+        "movies": {
+            "13": {
+                "movie_name": "fast and furious: tokyo drift",
+                "available_seats": 44
+            },
+            "15-17": {
+                "movie_name": "Star Wars: The Force Awakens",
+                "available_seats": 44
+            },
+            "16-18": {
+                "movie_name": "James Bond",
+                "available_seats": 5
+            },
+            "18-19": {
+                "movie_name": "toy story",
+                "available_seats": 4
+            },
+            "18-20": {
+                "movie_name": "Matrix",
+                "available_seats": 5
+            },
+            "22-23:15": {
+                "movie_name": "Star Wars",
+                "available_seats": 5
+            }
         }
-    }
-},
-{
-    "name": "go3fgdgod",
-    "seat_count": 44,
-    "movies":{
-        "16-18": {
-            "movie_name": "James Bond",
-            "available_seats": 5
-        },
-        "18-20": {
-            "movie_name": "Matrix",
-            "available_seats": 5
-        },
-        "20-22": {
-            "movie_name": "Star Wars",
-            "available_seats": 5
+    },
+    "g33ood": {
+        "seat_count": 44,
+        "movies": {
+            "15-16": {
+                "movie_name": "cars",
+                "available_seats": 44
+            },
+            "16-18": {
+                "movie_name": "James Bond",
+                "available_seats": 5
+            },
+            "18-20": {
+                "movie_name": "Matrix",
+                "available_seats": 5
+            },
+            "20-22": {
+                "movie_name": "Star Wars",
+                "available_seats": 5
+            },
+            "24-02": {
+                "movie_name": "White House Down",
+                "available_seats": 44
+            }
         }
-    }
-},
-{
-    "name": "go2323od",
-    "seat_count": 44,
-    "movies":{
-        "16-18": {
-            "movie_name": "James Bond",
-            "available_seats": 5
-        },
-        "18-20": {
-            "movie_name": "Matrix",
-            "available_seats": 5
-        },
-        "20-22": {
-            "movie_name": "Star Wars",
-            "available_seats": 5
+    },
+    "goodfd": {
+        "seat_count": 44,
+        "movies": {
+            "13-16": {
+                "movie_name": "Harry Potter and the Philosophers Stone",
+                "available_seats": 44
+            },
+            "16-18": {
+                "movie_name": "James Bond",
+                "available_seats": 5
+            },
+            "18-20": {
+                "movie_name": "Matrix",
+                "available_seats": 5
+            },
+            "20-22": {
+                "movie_name": "Star Wars",
+                "available_seats": 1
+            }
         }
-    }
-},
-{
-    "name": "g33ood",
-    "seat_count": 44,
-    "movies":{
-        "16-18": {
-            "movie_name": "James Bond",
-            "available_seats": 5
-        },
-        "18-20": {
-            "movie_name": "Matrix",
-            "available_seats": 5
-        },
-        "20-22": {
-            "movie_name": "Star Wars",
-            "available_seats": 5
-        }
-    }
-},
-{
-    "name": "gosdfsdfod",
-    "seat_count": 44,
-    "movies":{
-        "16-18": {
-            "movie_name": "James Bond",
-            "available_seats": 5
-        },
-        "18-20": {
-            "movie_name": "Matrix",
-            "available_seats": 5
-        },
-        "20-22": {
-            "movie_name": "Star Wars",
-            "available_seats": 5
-        }
-    }
-},
-{
-    "name": "gosdfsdfod",
-    "seat_count": 44,
-    "movies":{
-        "16-18": {
-            "movie_name": "James Bond",
-            "available_seats": 5
-        },
-        "18-20": {
-            "movie_name": "Matrix",
-            "available_seats": 5
-        },
-        "20-22": {
-            "movie_name": "Star Wars",
-            "available_seats": 5
+    },
+    "Imax 4d 3d Hyper-X Tesla Uber": {
+        "seat_count": 420,
+        "movies": {
+            "24": {
+                "movie_name": "Cars",
+                "available_seats": 420
+            },
+            "23": {
+                "movie_name": "Fast and Furious: Tokyo Drift",
+                "available_seats": 420
+            },
+            "1": {
+                "movie_name": "Star Wars",
+                "available_seats": 420
+            },
+            "20": {
+                "movie_name": "Cars",
+                "available_seats": 420
+            }
         }
     }
 }
-]
