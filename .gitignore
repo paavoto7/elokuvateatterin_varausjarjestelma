@@ -2,7 +2,7 @@ __pycache__/
 .vscode/
 testing.py
 database.csv
-salit.py
+salit1.py
 database_backup.json
 new.json
 time_testing.py

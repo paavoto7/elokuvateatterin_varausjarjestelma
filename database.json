@@ -33,7 +33,7 @@
         "movies": {
             "15-16": {
                 "movie_name": "cars",
-                "available_seats": 44
+                "available_seats": 8
             },
             "16-18": {
                 "movie_name": "James Bond",
@@ -45,11 +45,11 @@
             },
             "20-22": {
                 "movie_name": "Star Wars",
-                "available_seats": 5
+                "available_seats": 0
             },
             "24-02": {
                 "movie_name": "White House Down",
-                "available_seats": 44
+                "available_seats": 31
             }
         }
     },
@@ -79,7 +79,7 @@
         "movies": {
             "24": {
                 "movie_name": "Cars",
-                "available_seats": 420
+                "available_seats": 373
             },
             "23": {
                 "movie_name": "Fast and Furious: Tokyo Drift",
@@ -91,7 +91,7 @@
             },
             "20": {
                 "movie_name": "Cars",
-                "available_seats": 420
+                "available_seats": 337
             }
         }
     }
