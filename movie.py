@@ -14,7 +14,15 @@ def main():
     global saleja
     saleja = dict()
     load_data()
-    action = int(input("1. Login\n2. Register\nChoice: "))
+    while True:
+        try:
+            action = int(input("1. Login\n2. Register\n3. Quit\nChoice: "))
+            if action == 3:
+                sys.exit("Quitting.")
+            break
+        except ValueError:
+            print("Please input 1, 2 or 3.")
+            continue
 
     if action == 1:
         username = login()
@@ -175,15 +183,17 @@ def load_movies(movie_name=None):
     with open("movie_catalog.csv", "r+") as ctlg:
         reader = csv.reader(ctlg)
 
+        # Prin movies
         if movie_name == None:
             for movie in reader:
                 print(f"| {movie[0]} | {movie[1]} |")
                 print("----------------------------------------------")
 
+        # Write the movies into the catalog file
         else:
             movies = [movie[0] for movie in reader][1:]
             if movie_name not in movies:
-                ctlg.write(movie_name)
+                ctlg.write(f"{movie_name}, {random.randint(1,3)}")
                 ctlg.write("\n")
 
 

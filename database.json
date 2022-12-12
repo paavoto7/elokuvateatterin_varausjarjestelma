@@ -29,7 +29,7 @@
         }
     },
     "g33ood": {
-        "seat_count": 44,
+        "seat_count": 30,
         "movies": {
             "15-16": {
                 "movie_name": "cars",
@@ -54,11 +54,15 @@
         }
     },
     "goodfd": {
-        "seat_count": 44,
+        "seat_count": 64,
         "movies": {
+            "13-15": {
+                "movie_name": "Indiana Jones",
+                "available_seats": 39
+            },
             "13-16": {
                 "movie_name": "Harry Potter and the Philosophers Stone",
-                "available_seats": 32
+                "available_seats": 29
             },
             "14-16": {
                 "movie_name": "Matrix: 2",
@@ -87,7 +91,7 @@
             },
             "1": {
                 "movie_name": "Star Wars",
-                "available_seats": 367
+                "available_seats": 364
             },
             "20": {
                 "movie_name": "Cars",
