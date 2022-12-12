@@ -26,6 +26,7 @@ def register():
 
     with open("credidentials.csv", "a") as cred:
         cred.write(f"{username},{password},[reservation]\n")
+    return username
 
 
 def login():
@@ -67,7 +68,23 @@ def update_reservation(name, res):
             outter.writerows(new)
 
 
+def print_reservation():
+    with open("credidentials.csv", "r") as reservations:
+        reader = csv.reader(reservations)
+        next(reader)
+        print(f"| Username | Cinema | Time | Movie | Seat(s) |")
+        print("----------------------------------------------")
+        for line in reader:
+            res = line[2].strip("[]").replace("'", "").split(", ")
+            try:
+                print(f"| {line[0]} | {res[0]} | {res[1]} | {res[2]} | {res[3]} |")
+                print("----------------------------------------------")
+            except IndexError:
+                continue
+
+
 if __name__ == "__main__":
     # register()
     # login()
-    update_reservation("kukka", ["moi"])
+    # update_reservation("kukka", ["moi"])
+    print_reservation()
