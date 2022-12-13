@@ -178,7 +178,7 @@ def write_data():
         out.write("\n")
 
 
-# Print or return all the playing movies
+# Print all the playing movies or write missing movie
 def load_movies(movie_name=None):
     with open("movie_catalog.csv", "r+") as ctlg:
         reader = csv.reader(ctlg)
