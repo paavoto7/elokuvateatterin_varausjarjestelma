@@ -100,9 +100,17 @@ def reservation(movie: str):
                 ord_num += 1
 
     # Picking the cinema
+    if not playing:
+        print("No such movie found")
+        return
+        
     while True:
-        cinema = input("Pick a cinema(number): ")
-        seat = int(input("How many seats? "))
+        try:
+            cinema = input("Pick a cinema(number): ")
+            seat = int(input("How many seats? "))
+        except ValueError:
+            print("Invalid input")
+            return
 
         for key in playing:
             if cinema[0].lower() in key[0].lower():
@@ -136,7 +144,11 @@ def load_data():
 def add_cinema():
     global saleja
     cinema_name = input("The name of the new cinema: ")
-    seat_count = int(input("The seat count: "))
+    try:
+        seat_count = int(input("The seat count: "))
+    except ValueError:
+        print("Invalid input.")
+        return
 
     saleja[cinema_name] = {
         "seat_count": seat_count,
@@ -154,7 +166,11 @@ def movie_mod(action):
     movie = input("Which movie: ")
     time = input("At what time: ")
 
-    max_seats = saleja[new]["seat_count"]
+    try:
+        max_seats = saleja[new]["seat_count"]
+    except KeyError:
+        print("Invalid theather name")
+        return
 
     if action == "add":
         # Check if new movie in catalog
