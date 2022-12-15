@@ -3,11 +3,9 @@ import json
 import random
 import string
 import sys
-from datetime import datetime
+import datetime
 
 from account_system import login, print_reservation, register, update_reservation
-
-# Possibly use tabulate
 
 # The UI and choices
 def main():
@@ -16,24 +14,29 @@ def main():
     load_data()
     while True:
         try:
-            action = int(input("1. Login\n2. Register\n3. Quit\nChoice: "))
-            if action == 3:
+            action = input("1. Login\n2. Register\n3. Quit\nChoice: ").strip().lower()
+            if action == "3" or action == "quit":
                 sys.exit("Quitting.")
             break
         except ValueError:
             print("Please input 1, 2 or 3.")
             continue
+        except KeyboardInterrupt:
+            sys.exit("Quitting.")
 
-    if action == 1:
+    if action == "1" or action == "login":
         username = login()
         if username == "admin":
             admin = True
         else:
             admin = False
 
-    if action == 2:
+    elif action == "2" or action == "register":
         username = register()
         admin = False
+
+    else:
+        sys.exit("Invalid input.")
 
     # User mode
     if admin == False:
@@ -52,7 +55,7 @@ def main():
             sys.exit("\nThank you for choosing us!")
 
     # Admin mode
-    if admin == True:
+    elif admin == True:
         print("Administrator mode activated")
         while True:
             try:
@@ -101,9 +104,9 @@ def reservation(movie: str):
 
     # Picking the cinema
     if not playing:
-        print("No such movie found")
+        print("Movie not playing or not found.")
         return
-        
+
     while True:
         try:
             cinema = input("Pick a cinema(number): ")
@@ -121,6 +124,10 @@ def reservation(movie: str):
                     "".join(random.choices(string.ascii_letters + string.digits, k=10))
                 )
                 break
+
+        if "chosen" not in locals():
+            print("Cinema not found, try again.")
+            continue
 
         if saleja[cinema]["movies"][chosen]["available_seats"] >= seat:
             saleja[cinema]["movies"][chosen]["available_seats"] -= seat
@@ -155,6 +162,8 @@ def add_cinema():
         "movies": {time: data for (time, data) in populate(seat_count)},
     }
 
+    saleja[cinema_name]["movies"] = dict(sorted(saleja[cinema_name]["movies"].items()))
+
 
 # Add or modify a movie
 def movie_mod(action):
@@ -177,7 +186,7 @@ def movie_mod(action):
         load_movies(movie)
 
         saleja[new]["movies"][time] = {
-            "movie_name": movie,
+            "movie_name": movie.title(),
             "available_seats": max_seats,
         }
 
@@ -202,15 +211,14 @@ def load_movies(movie_name=None):
         # Prin movies
         if movie_name == None:
             for movie in reader:
-                print(f"| {movie[0]} | {movie[1]} |")
+                print(f"| {movie[0]} |")
                 print("----------------------------------------------")
 
         # Write the movies into the catalog file
         else:
-            movies = [movie[0] for movie in reader][1:]
-            if movie_name not in movies:
-                ctlg.write(f"{movie_name}, {random.randint(1,3)}")
-                ctlg.write("\n")
+            movies = [movie[0].lower() for movie in reader][1:]
+            if movie_name.lower() not in movies:
+                ctlg.write(f"{movie_name.title()}\n")
 
 
 def print_playing():
@@ -246,12 +254,20 @@ def populate(seat_count):
 
     # Yield the values back to the dictionary comprehension
     for i in range(5):
-        time = random.randint(0, 24)
+
+        time_now = datetime.datetime.now()
+        movie_start = time_now + datetime.timedelta(
+            hours=random.randint(0, 24), minutes=random.randint(0, 60)
+        )
+        movie_end = movie_start + datetime.timedelta(
+            hours=random.randint(1, 2), minutes=random.randint(0, 60)
+        )
+
         movie = {
-            "movie_name": movies[random.randint(1, 4)],
+            "movie_name": movies[random.randint(1, len(movies) - 1)],
             "available_seats": seat_count,
         }
-        yield time, movie
+        yield f"{movie_start.strftime('%H:%M')}-{movie_end.strftime('%H:%M')}", movie
 
 
 if __name__ == "__main__":

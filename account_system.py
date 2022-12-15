@@ -5,7 +5,7 @@ from getpass import getpass
 def register():
     while True:
         username = input("Username: ")
-        if len(username) < 4:
+        if len(username) < 4 or username == "admin":
             print("Too short.")
             continue
         else:
@@ -84,7 +84,4 @@ def print_reservation():
 
 
 if __name__ == "__main__":
-    # register()
-    # login()
-    # update_reservation("kukka", ["moi"])
-    print_reservation()
+    print("Try: python3 movie.py")

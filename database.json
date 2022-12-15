@@ -1,10 +1,14 @@
 {
-    "good": {
+    "First Hall": {
         "seat_count": 44,
         "movies": {
-            "13": {
-                "movie_name": "fast and furious: tokyo drift",
-                "available_seats": 44
+            "13-16": {
+                "movie_name": "django unchained",
+                "available_seats": 42
+            },
+            "14-15": {
+                "movie_name": "White House Down",
+                "available_seats": 36
             },
             "15-17": {
                 "movie_name": "Star Wars: The Force Awakens",
@@ -14,13 +18,17 @@
                 "movie_name": "James Bond",
                 "available_seats": 5
             },
+            "17-20": {
+                "movie_name": "Star Wars",
+                "available_seats": 44
+            },
             "18-19": {
                 "movie_name": "toy story",
                 "available_seats": 0
             },
             "18-20": {
                 "movie_name": "Matrix",
-                "available_seats": 5
+                "available_seats": 0
             },
             "22-23:15": {
                 "movie_name": "Star Wars",
@@ -28,74 +36,115 @@
             }
         }
     },
-    "g33ood": {
-        "seat_count": 30,
+    "Cool": {
+        "seat_count": 42,
         "movies": {
-            "15-16": {
-                "movie_name": "cars",
-                "available_seats": 6
+            "01:12-02:35": {
+                "movie_name": "Cars",
+                "available_seats": 42
             },
-            "16-18": {
-                "movie_name": "James Bond",
-                "available_seats": 5
+            "02:30-05:22": {
+                "movie_name": "Fast and Furious: Tokyo Drift",
+                "available_seats": 42
             },
-            "18-20": {
-                "movie_name": "Matrix",
-                "available_seats": 5
+            "03:26-05:03": {
+                "movie_name": "Cars",
+                "available_seats": 42
             },
-            "20-22": {
-                "movie_name": "Star Wars",
-                "available_seats": 0
+            "06:26-08:30": {
+                "movie_name": "Toy Story",
+                "available_seats": 42
             },
-            "24-02": {
-                "movie_name": "White House Down",
-                "available_seats": 26
-            }
-        }
-    },
-    "goodfd": {
-        "seat_count": 64,
-        "movies": {
-            "13-15": {
-                "movie_name": "Indiana Jones",
-                "available_seats": 39
+            "12:02-14:01": {
+                "movie_name": "Fast and Furious: Tokyo Drift",
+                "available_seats": 40
             },
-            "13-16": {
-                "movie_name": "Harry Potter and the Philosophers Stone",
-                "available_seats": 29
-            },
-            "14-16": {
-                "movie_name": "Matrix: 2",
-                "available_seats": 44
-            },
-            "16-18": {
-                "movie_name": "James Bond",
-                "available_seats": 5
-            },
-            "20-22": {
-                "movie_name": "Star Wars",
-                "available_seats": 1
+            "14:00-16:00": {
+                "movie_name": "Django Unchained",
+                "available_seats": 42
             }
         }
     },
     "Imax 4d 3d Hyper-X Tesla Uber": {
         "seat_count": 420,
         "movies": {
-            "24": {
-                "movie_name": "Cars",
-                "available_seats": 373
+            "02:58-04:23": {
+                "movie_name": "White House Down",
+                "available_seats": 420
             },
-            "23": {
+            "11:32-13:52": {
                 "movie_name": "Fast and Furious: Tokyo Drift",
-                "available_seats": 412
+                "available_seats": 417
             },
-            "1": {
+            "14:31-17:21": {
+                "movie_name": "Fast and Furious: Tokyo Drift",
+                "available_seats": 420
+            },
+            "17:15-19:50": {
+                "movie_name": "Toy Story",
+                "available_seats": 420
+            },
+            "20:07-22:31": {
+                "movie_name": "White House Down",
+                "available_seats": 420
+            }
+        }
+    },
+    "Thanos Hall": {
+        "seat_count": 42,
+        "movies": {
+            "13-15": {
+                "movie_name": "Pulp Fiction",
+                "available_seats": 33
+            },
+            "15:20-17:11": {
+                "movie_name": "The Wolf of Wall Street",
+                "available_seats": 42
+            },
+            "16:05-17:29": {
+                "movie_name": "Star Wars: The Force Awakens",
+                "available_seats": 42
+            },
+            "18:38-21:26": {
+                "movie_name": "Toy Story",
+                "available_seats": 42
+            },
+            "19:03-20:03": {
                 "movie_name": "Star Wars",
-                "available_seats": 364
+                "available_seats": 42
             },
-            "20": {
+            "20:17-21:38": {
                 "movie_name": "Cars",
-                "available_seats": 337
+                "available_seats": 42
+            },
+            "23:53-02:23": {
+                "movie_name": "Harry Potter and the Philosophers Stone",
+                "available_seats": 42
+            }
+        }
+    },
+    "Novigrad": {
+        "seat_count": 42,
+        "movies": {
+            "01:11-03:12": {
+                "movie_name": "White House Down",
+                "available_seats": 19
+            },
+            "05:28-07:50": {
+                "movie_name": "Fast and Furious: Tokyo Drift",
+                "available_seats": 42
+            },
+            "12:54-14:31": {
+                "movie_name": "White House Down",
+                "available_seats": 42
+            },
+            "12:54-15:44": {
+                "movie_name": "Fast and Furious: Tokyo Drift",
+                "available_seats": 40
+            },
+            "16:07-19:07": {
+                "movie_name": "Cars",
+                "available_seats": 42
             }
         }
     }

@@ -10,9 +10,30 @@ näytöksiin. Näytöksia tuli olla monia päivässä ja saleja tuli olla useita
 Työ venyi kokonaisuudessaan yli 300 riviä pitkäksi kommentit ja tyhjät rivit mukaanlukien.
 Optimointia ja koodin rakenteen parantelua ei ole turhan paljoa tehty rajallisen ajan vuoksi.
 
+## Käyttö
+
+Kun ohjelman käynnistää, se kysyy haluaako käyttäjä kirjautua vai rekisteröityä.  
+Tämän jälkeen itse varausjärjestelmä käynnistyy joko käyttäjä- tai ylläpitäjätilaan riippuen käyttäjästä.  
+
+Asiakasnäkymässä voi ainoastaan varata paikan valitsemaansa näytökseen.  
+Salia varatessa tulee syöttää salin edessä oleva järjestysnumero.
+
+Ylläpitäjällä on oma käyttöliittymänsä, jossa se hallita järjestelmää.  
+Se voi:
+1. Lisätä salin
+2. Lisätä elokuvan
+3. Poistaa elokuvan
+4. Nähdä asiakkaiden varaukset
+5. Nähdä pyörimässä olevat elokuvat
+6. Poistua
+
+Ylläpitäjätilassa tulee olla tarkempi syötön kanssa.  
+Salin nimi ja elokuvan tulee esimerkiksi elokuvaa poistaessa antaa merkilleen oikein.
+
 ## Ratkaisuperiaate
 
 Mietin erilaisia lähestymistapoja ratkaisuun, mutta päädyin vain pelkkiin tavallisiin funktioihin.  
+En lähtenyt olio-pohjaisella ratkaisulla etenemään, vaikka sitäkin pohdin.
 Tietojen tallentaminen tuotti suurimman päänvaivan, kun piti päättää csv:n ja json:in välillä.  
 Päädyin saleja sisällä pitävässä tiedostossa json:iin. Tämä ratkaisu saattoi paikoin tehdä koodista jokseenkin huonoa ja pitkää.
 
