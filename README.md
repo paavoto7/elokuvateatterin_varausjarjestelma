@@ -2,13 +2,17 @@
 
 ## Kuvaus
 
-Tämä työ toteutettiin osana ohjelmoinnin harjoitustyö -kurssia ja sen aiheena
+Tämä työ toteutettiin osana Turun Yliopiston ohjelmoinnin harjoitustyö -kurssia ja sen aiheena
 oli elokuvateatterin varausjärjestelmä.  
 Työssä tuli tehdä Pythonin avulla järjestelmä, jolla asiakas voi varata paikkoja
 näytöksiin. Näytöksia tuli olla monia päivässä ja saleja tuli olla useita eri kokoisia.
 
 Työ venyi kokonaisuudessaan yli 300 riviä pitkäksi kommentit ja tyhjät rivit mukaanlukien.
 Optimointia ja koodin rakenteen parantelua ei ole turhan paljoa tehty rajallisen ajan vuoksi.
+
+### Disclaimer
+Kirjautumisjärjetelmä on tehty ainoastaan mockup-mielessä.
+Tästä syystä kaikki on tarkoituksella tallennettu plain textinä.
 
 ## Käyttö
 
